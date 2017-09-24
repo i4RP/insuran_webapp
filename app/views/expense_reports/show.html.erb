@@ -1,0 +1,7 @@
+<%= form_tag user_expense_report_path(current_user, @expense_report_id), method: :put do %>
+  <%= select_tag(
+    :procon,
+    options_for_select([['反対', 0], ['賛成', 1]])
+  ) %>
+  <%= submit_tag "投票する" %>
+<% end %>

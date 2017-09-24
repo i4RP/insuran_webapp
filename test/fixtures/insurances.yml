@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EntryNum: 1
+  Amount: MyString
+  DeadLine: 2017-09-04 21:34:46
+
+two:
+  EntryNum: 1
+  Amount: MyString
+  DeadLine: 2017-09-04 21:34:46

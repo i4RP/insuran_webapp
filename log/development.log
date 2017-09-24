@@ -1,0 +1,819 @@
+Started GET "/" for 127.0.0.1 at 2017-09-07 18:00:39 +0900
+  
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-07 18:00:48 +0900
+  
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-07 20:04:35 +0900
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-07 22:15:58 +0900
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-07 22:17:12 +0900
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-08 09:41:10 +0900
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-08 09:41:11 +0900
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `connect'
+vendor/bundle/ruby/2.4.0/gems/mysql2-0.4.8/lib/mysql2/client.rb:89:in `initialize'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:17:23 +0900
+  
+ActiveRecord::NoDatabaseError (Unknown database 'insuran-webapp_development'):
+  
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `rescue in mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/connection_handling.rb:88:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:562:in `connection'
+vendor/bundle/ruby/2.4.0/gems/activerecord-5.1.2/lib/active_record/migration.rb:553:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/callbacks.rb:97:in `run_callbacks'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK(1992233967141679590, 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DeviseCreateUsers (20170802150837)
+  [1m[35m (17.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `ethereum_wallet_address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170802150837')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnsToUsers (20170802154423)
+  [1m[35m (21.4ms)[0m  [1m[35mALTER TABLE `users` ADD `name` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170802154423')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateInsurances (20170904123446)
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE `insurances` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `EntryNum` int, `Amount` varchar(255), `DeadLine` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170904123446')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateExpenseReports (20170905002038)
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE `expense_reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `vote_deadline` datetime, `content` text, `vote_status` tinyint(1), `vote_result` tinyint(1), `eth_send_expect_date` datetime, `image` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170905002038')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVotes (20170905003743)
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE `votes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `expense_report_id` int, `procon` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170905003743')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAmountToExpenseReport (20170905054435)
+  [1m[35m (22.0ms)[0m  [1m[35mALTER TABLE `expense_reports` ADD `amount` varchar(255)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170905054435')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAddressToExpenseReport (20170905054508)
+  [1m[35m (20.2ms)[0m  [1m[35mALTER TABLE `expense_reports` ADD `address` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170905054508')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTransferResultToExpenceReport (20170905091820)
+  [1m[35m (19.5ms)[0m  [1m[35mALTER TABLE `expense_reports` ADD `transfer_result` tinyint(1) NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170905091820')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-09-08 02:24:33', '2017-09-08 02:24:33')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(1992233967141679590)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `expense_reports`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'expense_reports'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `insurances`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'insurances'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `votes`[0m
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:30:37 +0900
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 4347ms (Views: 4330.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-09-08 11:32:27 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 92ms (Views: 74.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-09-08 11:33:09 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UvOfuRNsgQh5vaAYw4fLpytPZkQEO63ohU5uzXUZMOniuzE3YqB3f900MHGGPKgrSlpCBJF1LbVhjKzs14cuwQ==", "user"=>{"email"=>"shoei0205@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'shoei0205@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('shoei0205@gmail.com', '$2a$11$kHNd1QCuknk3pmTRjsbnou9GCpD7wCjo/8NkauPnBUXO/YRcTeLgK', '2017-09-08 02:33:09', '2017-09-08 02:33:09')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2017-09-08 02:33:09', `last_sign_in_at` = '2017-09-08 02:33:09', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 173ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-09-08 11:33:09 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/expense_reports" for 127.0.0.1 at 2017-09-08 11:33:14 +0900
+Processing by ExpenseReportsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mExpenseReport Load (0.6ms)[0m  [1m[34mSELECT `expense_reports`.* FROM `expense_reports` WHERE `expense_reports`.`vote_result` IS NULL AND (vote_deadline <= '2017-09-08 02:33:14.631587')[0m
+  Rendering expense_reports/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mExpenseReport Load (0.4ms)[0m  [1m[34mSELECT `expense_reports`.* FROM `expense_reports`[0m
+  Rendered collection of expense_reports/_expense_report.html.erb [0 times] (0.1ms)
+  Rendered expense_reports/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 51ms (Views: 35.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-09-08 11:33:17 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/insurances/new" for 127.0.0.1 at 2017-09-08 11:33:20 +0900
+Processing by InsurancesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:8545 (Connection refused - connect(2) for "localhost" port 8545)):
+  
+app/models/forms/user_wallet.rb:4:in `user_wallet_contract'
+app/models/forms/user_wallet.rb:23:in `get_applicants_length'
+app/controllers/insurances_controller.rb:6:in `new'
+Started GET "/users/1" for 127.0.0.1 at 2017-09-08 11:33:23 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-09-08 11:33:26 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jUpr3e0B3ID8IDBVDiXpIvEUTBR1easLbzBsMtwnzzE2OrU84ShzNv2H8OOou3+avvdzFvUs18jWueYn3vYpKw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:33:26 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:33:42 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:46:44 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 494ms (Views: 478.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-09-08 11:46:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:50:03 +0900
+  [1m[35m (3.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 711ms (Views: 696.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:50:06 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:50:08 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:54:46 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 157ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:54:48 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 346ms (Views: 342.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:56:03 +0900
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/darvish/Desktop/insuran-webapp/app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+ link rel="shortcut icon" href="/images/favicon.ico" /);@out
+                              ^
+/Users/darvish/Desktop/insuran-webapp/app/views/layouts/application.html.erb:9: syntax error, unexpected ')'
+ href="/images/favicon.ico" /);@output_buffer.safe_append='
+                              ^
+/Users/darvish/Desktop/insuran-webapp/app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/darvish/Desktop/insuran-webapp/app/views/layouts/application.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:56:15 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 463ms (Views: 460.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 11:56:22 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-08 12:02:46 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 241ms (Views: 226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-09-08 12:02:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-09-08 12:02:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-08 12:02:47 +0900
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-09-08 12:02:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2017-09-08 12:02:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:28:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:26:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/tagged_logging.rb:69:in `tagged'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/rack/logger.rb:24:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.2/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.2/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.2/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/configuration.rb:224:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:602:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:435:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/server.rb:299:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.9.1/lib/puma/thread_pool.rb:120:in `block in spawn_thread'

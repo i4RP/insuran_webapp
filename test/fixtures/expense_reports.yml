@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vote_deadline: 2017-09-05 09:20:38
+  content: MyText
+  vote_status: false
+  vote_result: false
+  eth_send_expect_date: 2017-09-05 09:20:38
+  image: MyString
+
+two:
+  vote_deadline: 2017-09-05 09:20:38
+  content: MyText
+  vote_status: false
+  vote_result: false
+  eth_send_expect_date: 2017-09-05 09:20:38
+  image: MyString

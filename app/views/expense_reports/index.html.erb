@@ -1,0 +1,21 @@
+<%= link_to "マイページ", user_path(current_user) %>
+<%= link_to "申請作成", new_user_expense_report_path(current_user) %>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th>申請日</th>
+      <th>申請内容</th>
+      <th>申請額</th>
+      <th>投票期日</th>
+      <th>投票状況(賛成/反対)</th>
+      <th>投票結果</th>
+      <th>ETH送信予定日</th>
+      <th>送金ステータス</th>
+      <th>請求書画像</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "expense_report", collection: @expense_reports %>
+  </tbody>
+</table>

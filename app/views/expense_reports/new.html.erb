@@ -1,0 +1,23 @@
+<span>申請日  <%= @expense_report.created_at %> </span>
+<br>
+<span>投票期日  <%= @expense_report.vote_deadline %> </span>
+<br>
+<span>ETH送信予定日  <%= @expense_report.eth_send_expect_date %> </span>
+<br>
+<%= form_for @expense_report, url:  user_expense_reports_path(current_user) do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <br>
+  <%= f.label :image, '請求書画像' %>
+  <%= f.file_field :image %>
+  <br>
+  <%= f.label :amount, '申請額(ETH)' %>
+  <%= f.text_field :amount %>
+  <br>
+  <%= f.label :address, '送信先アドレス' %>
+  <%= f.text_field :address, value: current_user.ethereum_wallet_address, readonly: true %>
+  <%= f.hidden_field :created_at, value: @expense_report.created_at %>
+  <%= f.hidden_field :vote_deadline, value: @expense_report.vote_deadline %>
+  <%= f.hidden_field :eth_send_expect_date, value: @expense_report.eth_send_expect_date %>
+  <%= f.submit %>
+<% end %>

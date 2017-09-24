@@ -1,0 +1,29 @@
+<tr>
+  <th scope="row"><%= expense_report.created_at %></th>
+  <th><%= expense_report.content %></th>
+  <th><%= expense_report.amount %></th>
+  <th><%= expense_report.vote_deadline %></th>
+  <th><%= Vote.where(expense_report_id: expense_report, procon: true).count %> / <%= Vote.where(expense_report_id: expense_report, procon: false).count %></th>
+
+  <% if expense_report.vote_result == false %>
+    <th>否決</th>
+  <% else %>
+    <th>可決</th>
+  <% end %>
+  <th><%= expense_report.eth_send_expect_date %></th>
+  <% if expense_report.transfer_result == false %>
+    <th>未送金</th>
+  <% else %>
+    <th>送金済み(時間がかかる可能性があります)</th>
+  <% end %>
+  <th><%= image_tag expense_report.image.url %></th>
+  <th><%= link_to "投票する", user_expense_report_path(current_user, expense_report) %></th>
+  <% if expense_report.vote_result == true && expense_report.transfer_result == false %>
+    <%= form_tag insurance_path(1), method: :put do %>
+      <%= hidden_field_tag :address, expense_report.address %>
+      <%= hidden_field_tag :amount, expense_report.amount %>
+      <%= hidden_field_tag :expense_report_id, expense_report.id %>
+      <th><%= submit_tag "送金する" %></th>
+    <% end %>
+  <% end %>
+</tr>

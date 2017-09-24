@@ -1,0 +1,16 @@
+<span>現在集まっているINS:  <%= @collecting_ins_num %> </span>
+<br>
+<span>現在保有しているINS:  <%= @hold_ins_num %> </span>
+<br>
+<%= form_for @buy_ins, url:  user_buy_inses_path(current_user) do |f| %>
+  <%= f.label :ethereum_wallet_address %>
+  <%= f.text_field :ethereum_wallet_address %>
+  <br>
+  <%= f.label :secret_key %>
+  <%= f.file_field :secret_key %>
+  <br>
+  <%= f.label :buy_ins_num %>
+  <%= f.select :buy_ins_num, [*0..10] %>
+  <br>
+  <%= f.submit %>
+<% end %>

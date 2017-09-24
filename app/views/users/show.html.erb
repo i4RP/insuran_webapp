@@ -1,0 +1,5 @@
+お名前: <%= current_user.name %><br>
+保有ETH: <%= @user_wei %><br>
+<br>
+<%= link_to "補償申請一覧・作成", user_expense_reports_path(current_user) %>
+<%= link_to "保険詳細", new_user_insurance_path(current_user) %>

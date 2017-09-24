@@ -1,0 +1,20 @@
+現在の加入人数:  <%= @current_applicants_num %>
+<br>
+次回送金実施まで: 残り<%= (Date.today.end_of_month - Date.today).to_i %> 日
+<br>
+現在の確定送金額: <%= @total_amount %> ETH
+<br>
+保険に加入しますか？
+<br>
+<%= form_tag user_insurances_path(current_user), method: :post do %>
+  <%= hidden_field_tag :type, 'applicant' %>
+  <%= submit_tag "加入する" %>
+<% end %>
+<br>
+<br>
+保険を退会しますか？
+<br>
+<%= form_tag user_insurances_path, method: :post do %>
+  <%= hidden_field_tag :type, 'unsubscribe' %>
+  <%= submit_tag "退会する" %>
+<% end %>
